@@ -3,6 +3,7 @@ All notable changes to this project will be documented in this file.
 
 ## [2.x]
 
+- Add serializer mixin for static string translations of error messages ([@CuriousLearner])
 - Add task for compiling static string translations. ([@CuriousLearner])
 - Ensure pypi and easy_install mirror is set to `pypi.python.org` ([@CuriousLearner])
 - Move `paginated_response` utility to `base.api.pagination`. ([@theskumar])
