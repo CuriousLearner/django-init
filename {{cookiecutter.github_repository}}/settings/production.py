@@ -69,7 +69,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 #  SECURITY
 # -----------------------------------------------------------------------------
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#secret-key
-# Raises ImproperlyConfigured exception if DJANO_SECRET_KEY not in os.environ
+# Raises ImproperlyConfigured exception if DJANGO_SECRET_KEY not in os.environ
 SECRET_KEY = env('DJANGO_SECRET_KEY')
 
 if SITE_SCHEME == 'https':
@@ -112,7 +112,7 @@ if ENABLE_MEDIA_UPLOAD_TO_S3:
     MEDIA_URL = env('MEDIA_URL',
                     default='https://s3.amazonaws.com/%s/' % AWS_STORAGE_BUCKET_NAME)
 
-# Static Assests
+# Static Assets
 # ------------------------
 {%- if cookiecutter.enable_whitenoise.lower() == 'y' %}
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
