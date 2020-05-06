@@ -3,6 +3,7 @@ All notable changes to this project will be documented in this file.
 
 ## [2.x]
 
+- User registration API allows `first_name` and `last_name` to be saved ([@CuriousLearner]).
 - Add support for Django 3.x ([@CuriousLearner]).
 - Remove support for Circle CI ([@theskumar])
 - vendor media type for accept headers. ([@tucosaurus]) 
